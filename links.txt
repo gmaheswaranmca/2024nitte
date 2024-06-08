@@ -2,5 +2,15 @@ https://www.hackerrank.com/contests/fundamentals-of-programming/challenges
 
 git clone https://github.com/gmaheswaranmca/2024nitte.git
 
+to work with git repo:
+1. Update local repo
+	a. $ git add .
+	b. $ git commit -m "Problems Source Codes Updated"
+	   $ git status 
+	
+2. Update local repo to remote repo [Sync]
+	a. $ git pull origin main 
+	b. $ git push origin main 
+
 
 

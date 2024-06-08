@@ -1,0 +1,36 @@
+Selection Sort 
+5
+  0    1   2    3    4              MIN ELEMENT INDEX
+[54] [68] [25] [14] [74]
+([54]) [68] [25] [14] [74]             0->2->3
+       -------------------
+ <14>  ([68]) [25] [54] [74]           1->2
+ <14>  <25>  68 54 74
+
+number of passes
+number of comparisons | swap 
+
+sorting: ascending 
+
+
+int numbers[MAX_SIZE];
+int size;
+//read size 
+//read numbers 
+for(int I = 0; I < (size-1); I++) { //selection | passes #size-1 
+    int MIN_ELE_INDEX = I;
+    for(int J = I + 1; J < size; J++) { // comparisons :: < MIN_ELE_INDEX
+        if(numbers[J] < numbers[MIN_ELE_INDEX]) {
+            MIN_ELE_INDEX = J;
+        }
+    }
+    if(I != MIN_ELE_INDEX) {
+        swap(&numbers[I],&numbers[MIN_ELE_INDEX]);
+    }
+}
+// print sorted numbers 
+
+
+
+
+
