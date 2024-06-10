@@ -1,0 +1,413 @@
+﻿1
+What will be the output of the following code snippet?
+#include <stdio.h>
+int main() {
+        int a = 3, b = 5;
+        int t = a;
+        a = b;
+        b = t;
+        printf("%d %d", a, b);
+        return 0;
+}
+3 5
+3 3
+5 5
+5 3
+
+
+
+
+
+
+2
+How is an array initialized in C language?
+int a[3] = {1, 2, 3};
+int a = {1, 2, 3};
+int a[] = new int[3]
+int a(3) = [1, 2, 3];
+
+
+
+
+
+
+
+
+3
+What is the output of the following code snippet?
+#include <stdio.h>
+int main() {
+        int a[] = {1, 2, 3, 4};
+        int sum = 0;
+        for(int i = 0; i < 4; i++) {
+            sum += a[i];
+        }
+        printf("%d", sum);
+        return 0;
+}
+1
+4
+20
+10
+
+
+
+
+
+
+4
+What is the output of the following code snippet?
+int main() {
+        int sum = 2 + 4 / 2 + 6 * 2;
+        printf("%d", sum);
+        return 0;
+}
+2
+15
+16
+18
+
+
+
+
+5
+How is the 3rd element in an array accessed based on pointer notation?
+*a + 3
+*(a + 3)
+*(*a + 3)
+&(a + 3)
+
+
+
+
+6
+How are String represented in memory in C?
+An array of characters.
+The object of some class.
+Same as other primitive data types.
+LinkedList of characters.
+
+
+7
+What will be the output of the following code snippet?
+#include <stdio.h>
+void solve() {
+    int a[] = {1, 2, 3, 4, 5};
+    int sum = 0;
+    for(int i = 0; i < 5; i++) {
+        if(i % 2 == 0) {
+            sum += *(a + i);
+        }
+        else {
+            sum -= *(a + i);
+        }
+    }
+    printf("%d", sum);
+}
+int main() {
+        solve();
+        return 0;
+}
+2
+15
+Syntax Error
+3
+
+
+8
+What will be the output of the following code snippet?
+#include <stdio.h>
+void solve() {
+    int first = 10, second = 20;
+    int third = first + second;
+    {
+        int third = second - first;
+        printf("%d ", third);
+    }
+    printf("%d", third);
+}
+int main() {
+        solve();
+        return 0;
+}
+10 30
+30 10
+10 20
+20 10
+
+
+9
+What is the disadvantage of arrays in C?
+The amount of memory to be allocated should be known beforehand.
+Elements of an array can be accessed in constant time.
+Elements are stored in contiguous memory blocks.
+Multiple other data structures can be implemented using arrays.
+
+
+10
+
+
+What will be the output of the following code snippet?
+#include <stdio.h>
+void solve() {
+    int a = 3;
+    int res = a++ + ++a + a++ + ++a;
+    printf("%d", res);
+}
+int main() {
+        solve();
+        return 0;
+}
+12
+24
+20
+18
+
+
+11
+What will be the value of x in the following code snippet?
+#include <stdio.h>
+void solve() {
+    int x = printf("Hello");
+    printf(" %d", x);
+}
+int main() {
+        solve();
+        return 0;
+}
+10
+5
+1
+0
+
+
+
+12
+Which of the following is an exit controlled loop?
+While loop.
+For loop.
+do-while loop.
+None of the above.
+
+
+13
+What will be the output of the following code snippet?
+#include <stdio.h>
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+void solve() {
+    int a = 3, b = 5;
+    swap(&a, &b);
+    printf("%d %d", a, b);
+}
+int main() {
+        solve();
+        return 0;
+}
+3 5
+5 3
+5 5
+3 3
+
+
+
+
+14
+How to declare a double-pointer in C?
+int *val
+int **val
+int &val
+int *&val
+
+
+15
+If p is an integer pointer with a value 1000, then what will the value of p + 5 be?
+1020
+1005
+1004
+1010
+
+
+16
+ What will be the output of the following code snippet?
+#include <stdio.h>
+#define VAL 3 * (2 + 6)
+void solve() {
+    int a = 10 + VAL;
+    printf("%d", a);
+}
+int main() {
+        solve();
+        return 0;
+}
+104
+24
+10
+34
+
+
+
+
+17
+What will be the output of the following code snippet?
+#include <stdio.h>
+void solve() {
+    printf("%d %d", (023), (23));
+}
+int main() {
+    solve();
+        return 0;
+}
+023 23
+23 23
+19 23
+23 19
+
+
+18
+What will be the output of the following code snippet?
+#include <stdio.h>
+void solve() {
+    printf("%d %d %d", (076), (28), (0x87));
+}
+int main() {
+    solve();
+        return 0;
+}
+76 28 87
+076 28 0x87
+62 28 135
+0 0 0
+
+
+19
+What will be the result of the following code snippet?
+#include <stdio.h>
+void solve() {
+    char ch[10] = "abcdefghij";
+    int ans = 0;
+    for(int i = 0; i < 10; i++) {
+        ans += (ch[i] - 'a');
+    }
+    printf("%d", ans);
+}
+int main() {
+    solve();
+        return 0;
+}
+45
+36
+20
+100
+
+
+20
+
+
+What will be the output of the following code snippet?
+#include <stdio.h>
+void solve() {
+    bool ok = false;
+    printf(ok ? "YES" : "NO");
+}
+int main() {
+    solve();
+        return 0;
+}
+Yes
+No
+Compilation Error
+None of the above
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+Ans: D
+2
+Ans: A
+3
+Ans: D
+
+4
+Ans: c
+BEDMAS
+
+5
+Ans: b
+
+6
+Ans: a
+
+7
+Ans: d
+
+8
+Ans: a
+
+9
+Ans: a
+
+
+10
+Ans: c
+The ++a operator follows the “change then use” rule. The a++ operator follows the “use then change” rule. Using these rules along with proper associativity we get the result of 
+
+
+11
+
+Ans: b
+
+
+12
+Ans: c
+
+
+13
+Ans: b
+
+
+
+
+14
+Ans: b
+
+
+15
+Ans: a
+
+
+16
+
+Ans: d
+
+
+17
+Ans: c
+
+
+18
+Ans: c
+
+
+19
+Ans: a
+
+
+20
+
+
+Ans: c
