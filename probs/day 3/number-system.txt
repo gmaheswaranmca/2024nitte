@@ -1,0 +1,3 @@
+23 -> decimal number  = 2 x 10^1 + 3 x 10^0 = DEC 23
+023 -> octal number = 2 x 8^1 + 3 x 8^0 = DEC 19
+0x23 -> hexadecimal number = 2 x 16^1 + 3 x 16^0 = DEC 35
