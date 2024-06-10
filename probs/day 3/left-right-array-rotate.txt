@@ -1,0 +1,26 @@
+#python
+numbers[:3]+numbers[3:]     left 3 pos rotates
+numbers[-3:]+numbers[:-3]   right 3 pos rotates
+
+//c language 
+#include<stdio.h>
+int main() {
+    short int numbers[] = {10,20,30,40,50,60,70,80};
+    int size = 8;
+    //rotate left 3 positions 
+    for(int I = 3; I < size; I++) {
+        printf("%d ",numbers[I]);
+    }
+    for(int I = 0; I < 3; I++) {
+        printf("%d ",numbers[I]);
+    }
+    printf("\n");
+    //rotate right 3 positions 
+    for(int I = size-3; I < size; I++) {
+        printf("%d ",numbers[I]);
+    }
+    for(int I = 0; I < size-3; I++) {
+        printf("%d ",numbers[I]);
+    }
+    return 0;
+}
