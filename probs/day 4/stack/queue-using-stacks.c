@@ -1,19 +1,32 @@
-225. Implement Stack using Queues
-https://leetcode.com/problems/implement-stack-using-queues/description/
+
+typedef struct {
+    
+} MyStack;
 
 
-232. Implement Queue using Stacks
-https://leetcode.com/problems/implement-queue-using-stacks/description/
-    Available type and functions:
-        1. MyStack 
-        2. myStackCreate
-           myStackPush
-           myStackPop
-           myStackPeek
-           myStackEmpty
+MyStack* myStackCreate() {
+    
+}
 
+void myStackPush(MyStack* obj, int x) {
+    
+}
 
+int myStackPop(MyStack* obj) {
+    
+}
 
+int myStackTop(MyStack* obj) {
+    
+}
+
+bool myStackEmpty(MyStack* obj) {
+    
+}
+
+void myStackFree(MyStack* obj) {
+    
+}
 
 typedef struct {
     MyStack* rstack1;
@@ -76,6 +89,7 @@ void myQueueFree(MyQueue* obj) {
     obj = NULL;
 }
 
+
 /**
  * Your MyQueue struct will be instantiated and called as such:
  * MyQueue* obj = myQueueCreate();
@@ -88,4 +102,4 @@ void myQueueFree(MyQueue* obj) {
  * bool param_4 = myQueueEmpty(obj);
  
  * myQueueFree(obj);
-*/           
+*/
