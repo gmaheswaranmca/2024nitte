@@ -1,0 +1,22 @@
+stack : LIFO 
+    int top_index = -1;
+    E_t items[MAX_SIZE]
+    ---
+    E_t top();
+    ---
+    bool empty();
+    bool full();
+    int size();
+    ---
+    void push(E_t item);
+    void pop();
+    ---
+
+salaries (input)
+2000
+3000
+5000
+3500
+
+stack       :       2000    3000    5000    3500
+top_index   :-1     0       1       2       3
