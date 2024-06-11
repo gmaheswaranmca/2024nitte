@@ -38,6 +38,7 @@ public:
         }
 
         int peek_data = q1.front(); 
+        q2.push(peek_data); q1.pop();
         //swap q1 and q2 
         queue<int> t = q1;
         q1 = q2;
