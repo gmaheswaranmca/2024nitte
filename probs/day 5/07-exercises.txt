@@ -1,8 +1,8 @@
 leetcode - linked list - problems 
-24. Swap Nodes in Pairs             [C] [C++?]
+24. Swap Nodes in Pairs             [C] [C++]
+19. Remove Nth Node From End of List 
 21. Merge Two Sorted Lists          
 61. Rotate List
-19. Remove Nth Node From End of List
 83. Remove Duplicates from Sorted List
 82	Remove Duplicates from Sorted List II
     ie Remove repeating elements from sorted list 
