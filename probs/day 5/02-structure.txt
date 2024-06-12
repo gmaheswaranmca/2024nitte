@@ -1,0 +1,36 @@
+structure for real-world-object 
+    [record/row/document]
+    tuple/relation 
+
+to create an employee object:
+#1
+struct Emp_t{
+    int num;
+    char name[255];
+    float salary;
+};
+
+struct Emp_t krishna;
+
+#2
+typedef struct{
+    int num;
+    char name[255];
+    float salary;
+} Emp_t;
+
+Emp_t krishna;
+
+#3
+struct _Emp_t{
+    int num;
+    char name[255];
+    float salary;
+} _Emp_t;
+
+typedef struct _Emp_t Emp_t;
+
+Emp_t krishna;
+//OR
+struct _Emp_t krishna;
+

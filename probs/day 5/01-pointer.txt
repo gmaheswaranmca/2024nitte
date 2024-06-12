@@ -1,0 +1,62 @@
+special variable to hold address of value memory/variable 
+
+syntax:
+    T val = {};     // value mem block 
+    T* ptr = &val;  // pointer to value mem block 
+    ---
+    user (fellow programmer/programmer) is getting 
+    to create the memory 
+    ---
+    user have:
+        alloc's     malloc, calloc, realloc | new 
+        de'alloc's  free                    | delete 
+    ---
+    stack   : compiler created mem 
+    heap    : user created mem 
+
+syntax:
+    float salary = 3000.0f;
+    float* rsalary = &salary; // use case 1
+
+    pass salary as reference:
+    float findBonus(float* rsalary) { // use case 2 
+        //code 
+        return //bonus value 
+    }
+
+    to access salary(value mem block):
+        *rsalary 
+    float* rsalary = (float*)malloc(sizeof(float)); // use case 3 // dynamic memory 
+
+syntax of malloc:
+    void* malloc(size in bytes); // void* generic pointer 
+
+
+    float* salaries = (float*)malloc(sizeof(float) * 100); 
+    // salaries[I] I-> 0..99,
+    // *(salaries + I)
+    free(salaries);
+
+struct Node_t {
+    float data;
+    struct Node_t *next;
+};
+
+struct Node_t* node1 = (struct Node_t*)malloc(sizeof(struct Node_t));
+
+struct Emp_t{
+    int num;
+    char name[255];
+    float salary;
+};
+
+struct Emp_t* remp = (struct Emp_t*)malloc(sizeof(struct Emp_t));
+
+---
+
+
+
+
+
+
+

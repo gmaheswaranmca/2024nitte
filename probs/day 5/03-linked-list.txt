@@ -1,0 +1,52 @@
+sequence: 10 20 30 40 50
+    1. array            : contigous, indexed, fixed elements  
+    {10, 20, 30, 40, 50}
+     0   1 ....
+    2. linked list      : non-contiguous, non-indexed, dynamic elements 
+    10 -> 20 -> 30 -> 40 -> 50   | singly linked list, head 
+    10 <-> 20 <-> 30 <-> 40 <-> 50 | doubly linked list, head, tail  
+To define the linked list:
+    To define node: 
+        nodes having links is the linked list 
+        #1
+        struct Node_t {
+            int data;
+            struct Node_t* next;
+        };
+
+        struct Node_t* node1 = (struct Node_t*)malloc(sizeof(struct Node_t));
+        #2
+        typedef struct {
+            int data;
+            struct Node_t* next;
+        } Node_t;
+
+        Node_t* node1 = (Node_t*)malloc(sizeof(Node_t));
+---------------------
+    forward_list    (circular)
+    list            (circular)
+----------------------
+    applications uses linked list 
+    1. stack 
+    2. queue 
+    3. tree 
+----------------------
+singly linked list (forward_list) operations:
+    1. search by key/position 
+    2. create/insert node in the beginning, given node 
+    3. delete by key/position 
+    4. reverse 
+    5. traversal : forward, backward [iteration|recursion]
+-----------------------    
+1. forward traversal 
+2. search by key
+
+
+
+
+
+
+
+
+
+
