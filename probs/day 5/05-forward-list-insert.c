@@ -39,6 +39,7 @@ int main()
     head = insertFirst(head,40.0f); // 40.0f -> 35.0f -> 15.0f -> 20.0f -> X
     head = insertFirst(head,25.0f); // 25.0f -> 40.0f -> 35.0f -> 15.0f -> 20.0f -> X
     doTraversal(head);
+    //release alloc's blocks
     return 0;
 }
 
