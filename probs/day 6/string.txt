@@ -84,73 +84,67 @@ converts a character to uppercase
 -----------------------------------
     string functions 
 -----------------------------------
-strcpy
-strcpy_s
-  
-(C11)
- 
-copies one string to another
-(function)
-strncpy
-strncpy_s
-  
-(C11)
- 
-copies a certain amount of characters from one string to another
-(function)
-strcat
-strcat_s
-  
-(C11)
- 
+#
+strcpy(dest, source) - copies one string to another
+char s1[255] = "Ritchie";
+char s2[255];
+strcpy(s2,s1); // s1="Ritchie" is copied to s2.
+
+
+#
 concatenates two strings
-(function)
-strncat
-strncat_s
-  
-(C11)
- 
-concatenates a certain amount of characters of two strings
-(function)
+strcat(source,dest)
+char s1[255] = "Dennis ";
+char s2[255] = "Ritchie";
+strcat(s1,s2); //s1="Dennis Ritchie", s2="Ritchie"
 
-
-strlen
-strnlen_s
-  
-(C11)
- 
+#  
 returns the length of a given string
-(function)
-strcmp
- 
-compares two strings
-(function)
-strncmp
- 
-compares a certain amount of characters of two strings
-(function)
+strlen(str) //
 
-strchr
- 
+#compares two strings
+strcmp(s1,s2); s1<s2 -1,s1>s2 +1,s1==s2 0
+char s1[255] = "Amogha";
+char s2[255] = "Krishna";
+strcmp(s1,s2) -> -1
+
+char s1[255] = "Krishna";
+char s2[255] = "Amogha";
+strcmp(s1,s2) -> +1
+
+char s1[255] = "Amogha";
+char s2[255] = "Amogha";
+strcmp(s1,s2) -> 0
+
+#
 finds the first occurrence of a character
-(function)
-strrchr
- 
-finds the last occurrence of a character
-(function)
+strchr(str,ch)
+char s1[255] = "Amogha";
+char* s2 = strchr(s1,'g'); //addr at 'g' in s1
+printf("%s",s2);//gha
 
+#
 strstr
- 
 finds the first occurrence of a substring of characters
-(function)
 
-strtok
-strtok_s
-  
-(C11)
- 
+#
 finds the next token in a byte string
-(function)
+strtok
+
+tokenizer 
+
+    - to extract words 
+    - to extract chars chunks
+
+char name[255] = "Sannidhi is coming from Karkala";
+char separator[20] = " "; //" ,&.;"
+char* word = strtok(name,separator);
+printf("%s\n",word); //Sannidhi
+word = strtok(NULL,separator);//is
+printf("%s\n",word);
+word = strtok(NULL,separator);//coming 
+printf("%s\n",word);
+....
 -----------------------------------
 
 
