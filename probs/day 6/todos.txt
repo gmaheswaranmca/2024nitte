@@ -1,0 +1,20 @@
+storage classes
+strings
+    built-in functions 
+    implement builit-in functions
+UDD:struct union enum   
+        accessing elements 
+    struct within struct 
+    typedef
+DMA: malloc, calloc, realloc, free
+Pointer: 
+    pointer and array 
+    pointer to pointer 
+    pointer to pointer to pointer 
+    array of pointers 
+    function pointer 
+    pointer to structure 
+
+
+-- --- ----
+bit fields 

@@ -1,0 +1,94 @@
+string:
+    sequence of chars ends with null char \0
+    "Null-terminated byte strings"
+
+    to declare the string:
+        - char array is the string 
+        char text[1024]; // text is the string 
+
+    char 'X' '9' '0' 'b'
+    "Hello C Students"
+
+string/char functions     
+    char functions 
+-----------------------------------
+Character classification
+-----------------------------------
+Defined in header <ctype.h>
+isalnum
+ 
+checks if a character is alphanumeric
+(function)
+isalpha
+ 
+checks if a character is alphabetic
+(function)
+islower
+ 
+checks if a character is lowercase
+(function)
+isupper
+ 
+checks if a character is an uppercase character
+(function)
+isdigit
+ 
+checks if a character is a digit
+(function)
+isxdigit
+ 
+checks if a character is a hexadecimal character
+(function)
+iscntrl
+ 
+checks if a character is a control character
+(function)
+isgraph
+ 
+checks if a character is a graphical character
+(function)
+isspace
+ 
+checks if a character is a space character
+(function)
+isblank
+  
+(C99)
+ 
+checks if a character is a blank character
+(function)
+isprint
+ 
+checks if a character is a printing character
+(function)
+ispunct
+ 
+checks if a character is a punctuation character
+(function)
+-----------------------------------
+
+
+-----------------------------------
+Character manipulation
+-----------------------------------
+tolower
+ 
+converts a character to lowercase
+(function)
+toupper
+ 
+converts a character to uppercase
+(function)
+    string functions 
+-----------------------------------
+
+-----------------------------------
+Q: 
+   read a string, 
+   find 
+        number of digits,
+                  alphabets,
+                  capital letters,
+                  small letters, 
+                  alpha numeric letters 
+-----------------------------------
