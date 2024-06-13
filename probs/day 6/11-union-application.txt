@@ -1,0 +1,33 @@
+students #6000 x 300 bytes
+faculties #200 x 4 bytes 
+guests #30 x 500 bytes 
+---------------------------
+        #6230
+
+struct people {
+    int type; //1-s, 2-f, 3-g 
+    student - set the details here      804 bytes 
+    faculty 
+    guest 
+}
+
+
+struct people {
+    int type; //1-s, 2-f, 3-g 
+    union{student //- set the details here      500 bytes 
+    faculty 
+    guest} people_detail; 
+}
+
+struct addr_t {
+    char door_num[200];
+    char address_line[500];
+    char city[200];
+    char pincode[6];
+};
+
+struct stud_t{
+    int usn;
+    char name[255];
+    struct addr_t address;
+}

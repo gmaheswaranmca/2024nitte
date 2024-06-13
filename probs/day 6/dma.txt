@@ -1,0 +1,19 @@
+DMA: malloc, calloc, realloc, free
+
+void* malloc(bytes_count);
+void* calloc(blocks_count, bytes_count);
+    - allocations 
+void* realloc(void* ptr, bytes_count);
+    - re allocations 
+
+float* salaries = (float*)malloc(50*sizeof(float));
+OR
+float* salaries = (float*)calloc(50,sizeof(float));
+//50 salaries array is created 
+//to change it as either 40 or 60 
+salaries = (float*)realloc(salaries,40*sizeof(float));
+OR 
+salaries = (float*)realloc(salaries,60*sizeof(float));
+
+free(salaries);
+

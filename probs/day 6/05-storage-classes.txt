@@ -60,6 +60,9 @@ and initialized once.
 the changed static variables values will be memorized.
 ie they are global to life, local to access 
 
+"""STATIC variables are like global varaibles 
+but access is private to the function"""
+
 
 #global (external) with extern 
     extern keyword for name resoultion by modules 

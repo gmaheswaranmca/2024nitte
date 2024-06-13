@@ -1,0 +1,39 @@
+to define struct Emp:
+
+struct Emp{
+    int num;            //4 
+    char name[255];     //255
+    flaot salary;       //4
+    char job_title[50]; //50
+};                      //313 
+
+struct Emp deekshith;
+
+// deekshith - storage size = 313
+
+to define union Emp:
+union Emp{
+    int num;            //4 
+    char name[255];     //255
+    flaot salary;       //4
+    char job_title[50]; //50
+};                      //313 
+
+union Emp deekshith;
+
+// deekshith - storage size = 255
+
+
+struct Emp{
+    int num;             
+    char name[255];     
+    flaot salary;       
+    char job_title[50]; 
+};                       
+
+struct Emp deekshith = {403,"Deekshith",60000.0f,"architect"};
+
+printf("%d %s %.2f %s",deekshith.num,
+        deekshith.name, 
+        deekshith.salary,
+        deekshith.job_title);
