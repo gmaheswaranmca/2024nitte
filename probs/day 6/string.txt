@@ -79,8 +79,81 @@ toupper
  
 converts a character to uppercase
 (function)
+-----------------------------------
+
+-----------------------------------
     string functions 
 -----------------------------------
+strcpy
+strcpy_s
+  
+(C11)
+ 
+copies one string to another
+(function)
+strncpy
+strncpy_s
+  
+(C11)
+ 
+copies a certain amount of characters from one string to another
+(function)
+strcat
+strcat_s
+  
+(C11)
+ 
+concatenates two strings
+(function)
+strncat
+strncat_s
+  
+(C11)
+ 
+concatenates a certain amount of characters of two strings
+(function)
+
+
+strlen
+strnlen_s
+  
+(C11)
+ 
+returns the length of a given string
+(function)
+strcmp
+ 
+compares two strings
+(function)
+strncmp
+ 
+compares a certain amount of characters of two strings
+(function)
+
+strchr
+ 
+finds the first occurrence of a character
+(function)
+strrchr
+ 
+finds the last occurrence of a character
+(function)
+
+strstr
+ 
+finds the first occurrence of a substring of characters
+(function)
+
+strtok
+strtok_s
+  
+(C11)
+ 
+finds the next token in a byte string
+(function)
+-----------------------------------
+
+
 
 -----------------------------------
 Q: 
