@@ -43,3 +43,8 @@ void doComputing() {
 
 program to generate the term in the number series:
 example: fibonacci sequence:
+
+#global (external) with extern 
+    extern keyword for name resoultion by modules 
+    later allocated in main or parent modules 
+
