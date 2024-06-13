@@ -1,0 +1,45 @@
+storage classes 
+                scope   visibility      memory      address
+                                                    accessible 
+    auto        local   local           stack           yes 
+    register    local   local           cpu register    no 
+    global      global  global 
+    static      global  local to fn/module
+#automatic 
+int square(int N) {
+    return N * N;
+}    
+
+int square(auto int N) {
+    return N * N;
+}
+
+int square(auto int N) {
+    int result = N * N; // by defualt result is auto 
+    return result;
+}
+
+#register 
+void doComputing() {
+    register int counter = 0; 
+    //code for computing 
+    printf("%d",counter);//allowed 
+    printf("%p",&counter);//illegal/syntax error 
+            //not allowed to access addr of register var 
+}    
+
+
+#static 
+    1. static keyword is used to define private 
+       variables to the module.
+    2. static keyword is used to 
+       define the long lasting local variable 
+       memory allocatted only once 
+       variable initialized only once 
+       - used to maintain the local buffer wrt function 
+       - generator function 
+            to generate term in the number series 
+                so that we will memorize the next number (buffer)
+
+program to generate the term in the number series:
+example: fibonacci sequence:
