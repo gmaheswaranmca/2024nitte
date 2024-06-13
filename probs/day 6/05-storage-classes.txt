@@ -44,6 +44,23 @@ void doComputing() {
 program to generate the term in the number series:
 example: fibonacci sequence:
 
+int fibb_term() { // generator 
+    static int first=0, second=1;//pointers
+    int next = first;
+    int third = first + second;
+    first = second;
+    second = third;
+    return next;
+}
+
+In "static int first=0, second=1;" 
+first and second are memory allocatted only once 
+and initialized once.
+
+the changed static variables values will be memorized.
+ie they are global to life, local to access 
+
+
 #global (external) with extern 
     extern keyword for name resoultion by modules 
     later allocated in main or parent modules 
