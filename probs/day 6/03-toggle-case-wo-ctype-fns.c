@@ -2,8 +2,8 @@
 #include <ctype.h>
 char* toggleCase(char* text) {
     for(int I=0; text[I] != '\0'; I++){
-        if(islower(text[I])) { text[I]=toupper(text[I]); } 
-        else if(isupper(text[I])) { text[I]=tolower(text[I]); } 
+        if('a' <= text[I] && text[I] <= 'z') { text[I]=text[I]-32; } 
+        else if('A' <= text[I] && text[I] <= 'Z') { text[I]=text[I]+32; } 
     }
     return text;
 }
