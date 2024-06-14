@@ -19,3 +19,37 @@ INSERT INTO users (username, password)
             VALUES('swathi','7654');
 INSERT INTO users (username, password) 
             VALUES('joshton','1234');            
+
+---------------------------------------
+//items: id, name, price, item_size, description
+             ('coffee', 20.0, 'small', 'small coffee - premium filter'),
+             ('tea', 15.0,    'small', 'small tea'),
+             ('coffee', 40.0, 'large', 'large coffee - premium filter'),
+             ('snacks', 18.0, 'small', 'small snacks')
+---------------------------------------
+DESC items;
+SELECT * FROM items;
+CREATE TABLE items (
+    id INTEGER primary key auto_increment,
+    name VARCHAR(512) not null,
+    price FLOAT not null DEFAULT(0.0),
+    item_size VARCHAR(50) not null,
+    description VARCHAR(1024) not null
+);
+INSERT INTO items(name, price, item_size, description)
+    values ('coffee', 20.0, 'small', 'small coffee - premium filter'),
+             ('tea', 15.0,    'small', 'small tea'),
+             ('coffee', 40.0, 'large', 'large coffee - premium filter'),
+             ('snacks', 18.0, 'small', 'small snacks');
+
+
+
+
+
+
+
+
+
+
+
+
