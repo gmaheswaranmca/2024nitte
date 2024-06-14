@@ -1,4 +1,5 @@
 Selection Sort 
+
 5
   0    1   2    3    4              MIN ELEMENT INDEX
 [54] [68] [25] [14] [74]

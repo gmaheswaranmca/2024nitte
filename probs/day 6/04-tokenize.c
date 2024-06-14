@@ -10,5 +10,6 @@ int main()
         printf("%s\n",word); // each word
         word = strtok(NULL,separator);//next next token/word
     }
+    
     return 0;
 }
