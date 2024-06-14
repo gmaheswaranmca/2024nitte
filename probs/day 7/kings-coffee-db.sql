@@ -42,6 +42,14 @@ INSERT INTO items(name, price, item_size, description)
              ('coffee', 40.0, 'large', 'large coffee - premium filter'),
              ('snacks', 18.0, 'small', 'small snacks');
 
+UPDATE items 
+SET price = 25.0
+WHERE name='tea' and item_size='small'; 
+//we cannot update the row using non-keys
+
+UPDATE items 
+SET price = 25.0
+WHERE id=2; //small tea price update
 
 
 
