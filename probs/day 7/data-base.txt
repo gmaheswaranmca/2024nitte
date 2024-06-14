@@ -1,0 +1,54 @@
+data processing - database / datasource 
+1. RDBMS / SQL : table based 
+    mysql 
+    sql server 
+    oracle 
+    postgres 
+    sqlite      (file based RDBMS)
+
+    database: collection of tables (objects)
+    table: collections of rows(data lines/records)
+        table-structure: meta data of the table: columns definitions 
+    rows
+
+
+    relationships within/across : dependecies 
+;
+    data models: relational data model | referencial | normalized 
+2. no-SQL 
+    mongo DB : document based base 
+
+    data foundation: document 
+    collection is container for the documents 
+
+    datamodels
+    1. relational data model | referencial | normalized 
+    2. hierarchical data model 
+--- --- --- --- ----
+mysql : RDBMS 
+    SQL : DDL, DML, TCL, DCL
+    CRUD operations (Create, Read, Update, Delete)
+        table : create
+            rows : create, readOne, readAll, update, delete
+--- --- --- --- ----   
+mysql installation:
+    Download "MySQL Community Server 8.4.0 LTS"
+        Pick 
+            Custom 
+                Pick both 
+                    Mysql 
+                    Workbench 
+--- --- --- --- ----   
+queens coffee app:
+    queens_coffee_db 
+
+1. CREATE DATABASE queens_coffee_db;
+
+
+
+
+
+
+
+
+
