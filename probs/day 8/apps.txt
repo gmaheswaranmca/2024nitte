@@ -1,3 +1,10 @@
+import sqlite3
+con = sqlite3.connect("tutorial.db")
+cur = con.cursor()
+res = cur.execute("SELECT name FROM sqlite_master")
+res.fetchone()
+
+
 1. softwares: python, pip, mysql, DB Browser for SQLite 
     CRUD operations with sqlite, mysql 
 2. python packages: 

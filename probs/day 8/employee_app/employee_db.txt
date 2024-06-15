@@ -1,0 +1,11 @@
+db: "employee.db"
+table: "employee"
+    fields: id, code, name, job_title, salary 
+
+CREATE TABLE employee(
+    id INTEGER PRIMARY KEY AUTOINCREMENT, 
+    code VARCHAR(10) non null, 
+    name VARCHAR(255) not null, 
+    job_title VARCHAR(50) not null, 
+    salary float not null
+);
