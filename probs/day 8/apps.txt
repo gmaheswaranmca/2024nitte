@@ -1,0 +1,43 @@
+1. softwares: python, pip, mysql, DB Browser for SQLite 
+    CRUD operations with sqlite, mysql 
+2. python packages: 
+    a. PyMySQL 
+        https://github.com/PyMySQL/PyMySQL
+    b. sqlite3 (part of core python)
+3. Apps - CRUD ops 
+    1. people_app
+        "people_db"
+        people:id, first_name, last_name 
+
+CREATE TABLE people
+(
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	first_name VARCHAR(255) NOT NULL,
+	last_name VARCHAR(255) NOT NULL
+);
+
+INSERT INTO people(first_name, last_name) 
+	VALUES('N.R.Samarth',     'Bhatt');        
+    2. you are going to solve people_app code 
+4. people_app 
+    menu driven console app 
+        1. create 
+            first name: 
+            last name: 
+            person is created successfully
+        2. list all 
+            #   first name      last name 
+            1   N.R.Samarth     Bhatt         
+            2   Rithvik         Shetty  
+            3   Melida Sanya    Mendonca
+            4   Rakesh          Nayak  
+            5   Rahul           Dravid  
+        3.  edit person
+            enter person's id: 2
+            first name(Rithvik):
+            last name(Shetty):
+            person is updated successfully 
+        4. delete person 
+            enter person's id: 5
+            person is deleted successfully 
+        5. exit app             
