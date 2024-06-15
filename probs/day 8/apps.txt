@@ -48,3 +48,14 @@ INSERT INTO people(first_name, last_name)
             enter person's id: 5
             person is deleted successfully 
         5. exit app             
+
+
+CREATE TABLE user (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	username VARCHAR(50) NOT NULL,
+	password VARCHAR(50) NOT NULL
+);
+
+INSERT INTO user(username, password)
+	VALUES('manager','1234'),
+		  ('supervisor','5678');

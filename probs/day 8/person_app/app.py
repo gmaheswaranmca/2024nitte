@@ -6,7 +6,10 @@ def list_all():
     sql = "SELECT * FROM people"
     sqlResult  = cur.execute(sql)
     people = sqlResult.fetchall()
-    print(people)
+    #print(people)
+    print('id\tfirst name\tlast name')
+    for person in people:
+        print(f'{person[0]}\t{person[1]}\t{person[2]}')
 
 def create_person():
     first_name = input('first name:')
@@ -62,23 +65,47 @@ WHERE id={id}'''
     con.commit()
     print('person is deleted successfully.')
 
-msg = '''Choices are
+def application():
+    msg = '''Choices are
 1-create
 2-list all
 3-edit
 4-delete
 5-exit app
 Your Choice:'''
-choice = int(input(msg))
-while(choice!=5):
-    if choice == 1:
-        create_person() 
-    elif choice == 2:
-        list_all()
-    elif choice == 3:
-        edit_person() 
-    elif choice == 4:
-        delete_person() 
     choice = int(input(msg))
+    while(choice!=5):
+        if choice == 1:
+            create_person() 
+        elif choice == 2:
+            list_all()
+        elif choice == 3:
+            edit_person() 
+        elif choice == 4:
+            delete_person() 
+        choice = int(input(msg))
 
-print('End of people application.')
+    print('End of people application.')
+
+def login():
+    username = input('username:')
+    password = input('password')
+    con = sqlite3.connect("person_db.sqlite3")
+    cur = con.cursor()
+    sql = f"SELECT * FROM user WHERE username='{username}'"
+    sqlResult  = cur.execute(sql)
+    user = sqlResult.fetchone()
+
+    if not user:
+        print('username/password invalid')
+        return 
+    
+    if user[2] != password:
+        print('username/password invalid')
+        return
+    
+    application()
+
+    
+
+login()
