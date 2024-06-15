@@ -21,7 +21,46 @@ VALUES('{first_name}','{last_name}')'''
     con.commit()
     print('person is created successfully.')
 
+def edit_person():
+    id = int(input('enter person id:'))
+    con = sqlite3.connect("person_db.sqlite3")
+    cur = con.cursor()
+    sql = f"SELECT * FROM people WHERE id={id}"
+    sqlResult  = cur.execute(sql)
+    person = sqlResult.fetchone()
     
+    first_name = input(f'first name({person[1]}):')
+    last_name = input(f'last name({person[2]}):')
+    #sql = '''INSERT INTO people(first_name, last_name)
+#VALUES('%s','%s')'''%(first_name,last_name)
+    sql = f'''UPDATE people
+SET first_name='{first_name}',
+    last_name='{last_name}' 
+WHERE id={id}'''
+    sqlResult  = cur.execute(sql)
+    con.commit()
+    print('person is updated successfully.')
+    
+def delete_person():
+    id = int(input('enter person id:'))
+    con = sqlite3.connect("person_db.sqlite3")
+    cur = con.cursor()
+    sql = f"SELECT * FROM people WHERE id={id}"
+    sqlResult  = cur.execute(sql)
+    person = sqlResult.fetchone()
+    
+    print(f'first name:{person[1]}:')
+    print(f'last name:{person[2]}')
+    #sql = '''INSERT INTO people(first_name, last_name)
+#VALUES('%s','%s')'''%(first_name,last_name)
+    confirm = input('Are you sure to detele(y/n)?')
+    if confirm != 'y':
+        return
+    sql = f'''DELETE FROM people
+WHERE id={id}'''
+    sqlResult  = cur.execute(sql)
+    con.commit()
+    print('person is deleted successfully.')
 
 msg = '''Choices are
 1-create
@@ -37,9 +76,9 @@ while(choice!=5):
     elif choice == 2:
         list_all()
     elif choice == 3:
-        pass 
+        edit_person() 
     elif choice == 4:
-        pass 
+        delete_person() 
     choice = int(input(msg))
 
 print('End of people application.')
